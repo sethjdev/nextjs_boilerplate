@@ -8,7 +8,6 @@ export default ({ title = 'This is the default title' }) => (
         <title>{title}</title>
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
- 
         <style dangerouslySetInnerHTML={{ __html: bootstrap }} />
      </Head>
 )

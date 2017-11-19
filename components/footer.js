@@ -2,14 +2,21 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Header from './header'
 import Meta from './meta'
-import foot_style from '../styles/footer.scss';
 
 export default () => (
     <div>
-        <style dangerouslySetInnerHTML={{ __html: foot_style }}></style>
         <footer>
             {'Footer'}
         </footer>
+        <style jsx global>{`
+            footer {
+                width: 100%;
+                display: block;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                background-color: white;
+            }
+        `}</style>
     </div>
-
 )

@@ -1,29 +1,14 @@
 {
-    "plugins": [
+    "presets": [
         [
-            "module-resolver",
+            "next/babel",
             {
-                "root": [
-                    "."
-                ],
-                "alias": {
-                    "styles": "./styles"
-                },
-                "cwd": "babelrc"
-            }
-        ],
-        [
-            "wrap-in-js",
-            {
-                "extensions": [
-                    "css$",
-                    "scss$"
-                ]
+                "styled-jsx": {
+                    "plugins": [
+                        "styled-jsx-plugin-sass"
+                    ]
+                }
             }
         ]
-    ],
-    "presets": [
-        "next/babel"
-    ],
-    "ignore": []
+    ]
 }
