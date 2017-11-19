@@ -69,7 +69,8 @@ export default class extends React.Component {
                         top: 0;
                         left: 0;
                         padding: 10px;
-                    
+                        z-index: 9999;
+                        
                         .main-navigation {
                             ul {
                                 list-style: none;

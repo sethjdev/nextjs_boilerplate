@@ -19,7 +19,7 @@ export default ({ children }) => (
             } 
             
             .main-body {
-                padding-top: 75px;
+                padding-top: 120px;
             }
 
             input {

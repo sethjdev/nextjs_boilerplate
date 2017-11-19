@@ -6,22 +6,19 @@ export default class extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
-    } 
-
-    static async getInitialProps({ req }) {
-        const userAgent = req.params;
-        return { userAgent }
-    }
-
-    sayHi() {
-        alert('Hi!');
     }
 
     render() {
         return (
             <div>
                 <Layout>
-                    <h1 onClick={this.sayHi}>HOME | WEBSITE</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1>Welcome to the homepage.</h1>
+                            </div>
+                        </div>
+                    </div>
                 </Layout>
             </div>
         )

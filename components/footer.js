@@ -5,8 +5,15 @@ import Meta from './meta'
 
 export default () => (
     <div>
-        <footer>
-            {'Footer'}
+        <footer className="pt-3 pb-3">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-6">
+                        <small>Website Inc.<br/>&copy; 2018 | All Rights Reserved</small>
+                    </div>
+                    <div class="col-6"></div>
+                </div>
+            </div>
         </footer>
         <style jsx>{`
             footer {
