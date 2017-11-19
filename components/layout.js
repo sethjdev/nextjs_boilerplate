@@ -13,10 +13,11 @@ export default ({ children }) => (
         </div>
         <Footer></Footer>
         <style jsx global>{`
+            
             body {
-                background-color: #e1e1e1!important;
+                background-color: #e1e1e1;
             } 
-
+            
             .main-body {
                 padding-top: 75px;
             }
@@ -24,7 +25,8 @@ export default ({ children }) => (
             input {
                 appearance: none;
                 outline: none;
-            } 
+            }
+
         `}</style>
     </div>
 )

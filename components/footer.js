@@ -8,7 +8,7 @@ export default () => (
         <footer>
             {'Footer'}
         </footer>
-        <style jsx global>{`
+        <style jsx>{`
             footer {
                 width: 100%;
                 display: block;

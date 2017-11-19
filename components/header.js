@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import React from 'react';
-import stylesheet from '../styles/header.scss';
 
 export default class extends React.Component {
 
@@ -9,6 +8,7 @@ export default class extends React.Component {
         super(props);
 
         this.state = {
+
             listSrc: [
                 { name: "Home", link: "/" },
                 { name: "Services", link: "/services" },
@@ -34,18 +34,33 @@ export default class extends React.Component {
 
         return (
             <div>
-                <header id="header" className="d-flex justify-content-start align-items-center">
-                    <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-                    <nav className="main-navigation">
-                        <ul className="d-flex justify-content-between align-items-center">
-                            {this.listItems()}
-                        </ul>
-                    </nav>
-                    <div className="ml-5 search-form">
-                        <input type="text" placeholder="What service are you looking for?" />
+
+                <header id="header">
+                    <div className="container-fluid">
+                        <div className="row d-flex align-items-center">
+                            <div className="col-sm-1">
+                                <img src="http://via.placeholder.com/100x100?text=logo" className="header-logo" />
+                            </div>
+                            <div className="col-sm-4">
+                                <nav className="main-navigation">
+                                    <ul className="d-flex justify-content-between align-items-center">
+                                        {this.listItems()}
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div className="col-sm-4 push-sm-1">
+                                <div className="search-form">
+                                    <input type="text" placeholder="What service are you looking for?" />
+                                </div>
+                            </div>
+                            <div className="col-sm-2 push-sm-1 d-flex align-items-center">
+                                <p className="m-0">Membership</p>
+                            </div>
+                        </div>
                     </div>
                 </header>
-                <style jsx global>{`
+
+                <style jsx>{`
                    #header {
                     
                         background-color: white;
@@ -53,7 +68,6 @@ export default class extends React.Component {
                         position: fixed;
                         top: 0;
                         left: 0;
-                        display: block;
                         padding: 10px;
                     
                         .main-navigation {
@@ -61,15 +75,15 @@ export default class extends React.Component {
                                 list-style: none;
                                 padding: 0;
                                 margin: 0;
-                                width: 400px;
+                                width: 100%;
                                 
                                 li {
                                     display: inline-block;
                     
                                     a {
-                                        color: #525252;
+
                                         &:hover {
-                                            text-decoration: none;
+                                            text-decoration: none!important;
                                         }
                                     }
                                 }
@@ -86,6 +100,15 @@ export default class extends React.Component {
                                 padding: 10px;
                                 color: #393939;
                             }
+                        }
+
+                        .header-logo {
+                            width: 100%;
+                            max-width: 80px;
+                            height: auto;
+                            display: block;
+                            margin: 0 auto;
+                            border-radius: 80px;
                         }
                     
                     }

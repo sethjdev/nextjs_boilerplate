@@ -6,7 +6,7 @@ export default class extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
-    }
+    } 
 
     static async getInitialProps({ req }) {
         const userAgent = req.params;
@@ -23,14 +23,6 @@ export default class extends React.Component {
                 <Layout>
                     <h1 onClick={this.sayHi}>HOME | WEBSITE</h1>
                 </Layout>
-                <style jsx global>{`
-                    $primary-color: black;
-                    
-                    p {
-                      font-size: xx-large;
-                      color: $primary-color;
-                    }                    
-                `}</style>
             </div>
         )
     }

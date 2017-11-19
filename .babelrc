@@ -1,14 +1,22 @@
 {
-    "presets": [
+    "plugins": [
         [
-            "next/babel",
-            {
-                "styled-jsx": {
-                    "plugins": [
-                        "styled-jsx-plugin-sass"
-                    ]
-                }
-            }
+          "inline-import",
+          {
+            "extensions": [".css"]
+          }
         ]
+    ],
+    "presets": [
+      [
+        "next/babel",
+        {
+          "styled-jsx": {
+            "plugins": [
+              "styled-jsx-plugin-sass"
+            ]
+          }
+        }
+      ]
     ]
-}
+  }
