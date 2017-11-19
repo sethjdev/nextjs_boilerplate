@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import Header from './header'
+import Header from './navbar/header' 
 import Meta from './meta'
 import Footer from './footer'
 

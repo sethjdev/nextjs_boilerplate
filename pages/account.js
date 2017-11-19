@@ -15,7 +15,7 @@ export default class extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
-                                <h1>Welcome to the homepage, suckas!</h1>
+                                <h1>Welcome to the account page!</h1>
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,7 @@
 import Link from 'next/link'
-import React from 'react';
+import React from 'react'
+import FontAwesome from 'react-fontawesome'
+import Account from './account'
 
 export default class extends React.Component {
 
@@ -16,6 +18,7 @@ export default class extends React.Component {
                 { name: "Blog", link: "/blog" },
                 { name: "Get a Quote", link: "/quote" }
             ]
+
         };
 
     }
@@ -38,23 +41,23 @@ export default class extends React.Component {
                 <header id="header">
                     <div className="container-fluid">
                         <div className="row d-flex align-items-center">
-                            <div className="col-sm-1">
+                            <div className="col-lg-1">
                                 <img src="http://via.placeholder.com/100x100?text=logo" className="header-logo" />
                             </div>
-                            <div className="col-sm-4">
+                            <div className="col-lg-4">
                                 <nav className="main-navigation">
                                     <ul className="d-flex justify-content-between align-items-center">
                                         {this.listItems()}
                                     </ul>
                                 </nav>
                             </div>
-                            <div className="col-sm-4 push-sm-1">
+                            <div className="col-lg-4 push-lg-1">
                                 <div className="search-form">
                                     <input type="text" placeholder="What service are you looking for?" />
                                 </div>
                             </div>
-                            <div className="col-sm-2 push-sm-1 d-flex align-items-center">
-                                <p className="m-0">Membership</p>
+                            <div className="col-lg-2 push-lg-1 d-flex align-items-center">
+                                <Account/>
                             </div>
                         </div>
                     </div>
@@ -70,7 +73,7 @@ export default class extends React.Component {
                         left: 0;
                         padding: 10px;
                         z-index: 9999;
-                        
+
                         .main-navigation {
                             ul {
                                 list-style: none;
