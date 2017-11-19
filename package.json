@@ -1,0 +1,31 @@
+{
+  "name": "next2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "NODE_ENV=production node ./server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-plugin-wrap-in-js": "^1.1.1",
+    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap-4": "4.0.0",
+    "glob": "^7.1.2",
+    "jquery": "^3.2.1",
+    "next": "^4.1.4",
+    "node-sass": "^4.7.1",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-loader": "^2.0.8",
+    "raw-loader": "^0.5.1",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "reactstrap": "^5.0.0-alpha.4",
+    "sass-loader": "^6.0.6"
+  }
+}

@@ -1,0 +1,7 @@
+;
+
+(function () {
+  "use strict";
+
+  module.exports = "body {\n  background-color: #bdbdbd !important; }\n\n.main-body {\n  padding-top: 75px; }\n\ninput {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  outline: none; }\n";
+})();

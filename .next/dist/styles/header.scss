@@ -1,0 +1,7 @@
+;
+
+(function () {
+  "use strict";
+
+  module.exports = "#header {\n  background-color: white;\n  width: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  display: block;\n  padding: 10px; }\n  #header .main-navigation ul {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    width: 400px; }\n  #header .main-navigation ul li {\n      display: inline-block; }\n  #header .search-form {\n    display: block;\n    width: 100%; }\n  #header .search-form input {\n      border: 1px solid #d5d5d5;\n      border-radius: 2px;\n      width: 100%;\n      padding: 10px;\n      color: #393939; }\n";
+})();
