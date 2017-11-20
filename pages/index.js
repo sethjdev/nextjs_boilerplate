@@ -52,6 +52,9 @@ export default class extends React.Component {
 
     componentDidMount() {
         $('.slick-slider').addClass('slider-in');
+        $(window).scroll(function () {
+            $('.page-slide').css("background-position","50% " + ($(this).scrollTop() / 2) + "px");
+        });
     }
 
     renderSlides() {
@@ -116,8 +119,11 @@ export default class extends React.Component {
                         min-height: $slide-height;
                         width: 100%;
                         background-size: cover;
-                        background-position: center center;
-                        
+                        background-repeat: repeat-y;
+                        background-position: 50% 0;    
+                        transition: 0s linear;
+                        transition-property: background-position;
+
                         h3 {
                             font-size: 4em;
                             font-weight: 100;

@@ -10,7 +10,7 @@ export default () => (
                     <div className="col-6 d-flex align-items-center justify-content-start">
                         <img src="http://via.placeholder.com/100x100?text=logo" className="footer-logo mr-3" />
                         <div>
-                            <small className="d-block">Website Inc.</small>
+                            <small className="d-block">Service Website Inc.</small>
                             <small className="d-block">&copy; 2018 | All Rights Reserved</small>
                         </div>
                     </div>

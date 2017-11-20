@@ -12,8 +12,7 @@ export default class extends React.Component {
 
         return (
             <div className="w-100 d-flex justify-content-start align-items-start flex-column">
-                <p className="m-0"><FontAwesome className='mr-2' name='user-circle' /> Account</p>
-                <p className="m-0"><a href="#">Sign In</a> or <a href="#">Register</a></p>
+                <p className="m-0"><FontAwesome className='mr-2' name='user' />My Account<br/><a href="#">Sign In</a> or <a href="#">Register</a></p>
                 <style jsx>{`
                     //styles go here
                     
