@@ -8,5 +8,6 @@ export default ({ title = 'Test NextJs Website' }) => (
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <style>{bootstrap}</style>
         <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' crossOrigin='anonymous'></link>
+        <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,700" rel="stylesheet"></link>
      </Head>
 )

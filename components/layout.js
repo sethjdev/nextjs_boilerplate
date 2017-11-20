@@ -18,14 +18,23 @@ export default ({ children }) => (
                 background-color: #fcfcfc;
                 overflow-x: hidden!important;
             } 
+
+            h1,h2,h3,h4,h5,h6,a,p,button,input,select,textarea, small {
+                font-family: 'Barlow', sans-serif!important;
+            }
             
             .main-body {
                 padding-top: 80px;
+                padding-bottom: 80px;
             }
 
             input {
                 appearance: none;
                 outline: none;
+            }
+
+            .lg-title {
+                font-weight: 100;
             }
 
         `}</style>

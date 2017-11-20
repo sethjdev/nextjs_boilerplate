@@ -5,6 +5,8 @@ import slick_css from '../node_modules/slick-carousel/slick/slick.css';
 import slick_theme from '../node_modules/slick-carousel/slick/slick-theme.css';
 import Head from 'next/head'
 import $ from "jquery";
+import AboutUs from '../components/home/about_us';
+import Spacer from '../components/spacer';
 
 export default class extends React.Component {
 
@@ -40,7 +42,8 @@ export default class extends React.Component {
                 speed: 500,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                autoplay: true
+                autoplay: true,
+                arrows: true
             }
 
         };
@@ -77,20 +80,13 @@ export default class extends React.Component {
             <div>
 
                 <Layout>
-
                     <Slider {...this.state.settings}>
                         {this.renderSlides()}
                     </Slider>
-
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-                                <h1 className="text-center mt-3">We're the best service provider!</h1>
-                            </div>
-                        </div>
-                    </div>
-
+                    <Spacer/>
+                    <AboutUs />
                 </Layout>
+
                 <Head>
                     <style>{slick_css}</style>
                     <style>{slick_theme}</style>
@@ -119,7 +115,9 @@ export default class extends React.Component {
 
                         min-height: $slide-height;
                         width: 100%;
-
+                        background-size: cover;
+                        background-position: center center;
+                        
                         h3 {
                             font-size: 4em;
                             font-weight: 100;
