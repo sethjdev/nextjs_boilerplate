@@ -20,12 +20,14 @@ export default () => (
         </footer>
         <style jsx>{`
             footer {
+                
                 width: 100%;
                 display: block;
                 position: fixed;
                 bottom: 0;
                 left: 0;
                 background-color: white;
+                box-shadow: 0 -2px 5px rgba(0,0,0,.05);
 
                 small {
                     color: #a0a0a0;
@@ -33,7 +35,7 @@ export default () => (
                 
                 .footer-logo {
                     width: 100%;
-                    max-width: 50px;
+                    max-width: 40px;
                     height: auto;
                     display: block;
                     border-radius: 50px;

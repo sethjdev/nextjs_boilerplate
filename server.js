@@ -20,6 +20,9 @@ app.prepare()
             return app.render(req, res, '/account', req.query)
         })
 
+        server.use("/images", express.static('./images'));
+        server.use("/fonts", express.static('./fonts'));
+
         //   server.get('/posts/:id', (req, res) => {
         //     return app.render(req, res, '/posts', { id: req.params.id })
         //   })

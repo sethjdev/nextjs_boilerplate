@@ -73,6 +73,7 @@ export default class extends React.Component {
                         left: 0;
                         padding: 10px;
                         z-index: 9999;
+                        box-shadow: 0 2px 5px rgba(0,0,0,.05);
 
                         .main-navigation {
                             ul {
@@ -108,7 +109,7 @@ export default class extends React.Component {
 
                         .header-logo {
                             width: 100%;
-                            max-width: 80px;
+                            max-width: 60px;
                             height: auto;
                             display: block;
                             margin: 0 auto;

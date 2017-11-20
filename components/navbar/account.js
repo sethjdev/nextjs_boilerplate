@@ -11,17 +11,13 @@ export default class extends React.Component {
     render() {
 
         return (
-            <div>
-
-                <div className="d-flex w-100 justify-content-between align-items-center">
-                    <FontAwesome className='mr-3' name='user' />
-                    <p className="m-0">Membership</p>
-                </div>
-
+            <div className="w-100 d-flex justify-content-start align-items-start flex-column">
+                <p className="m-0"><FontAwesome className='mr-2' name='user-circle' /> Account</p>
+                <p className="m-0"><a href="#">Sign In</a> or <a href="#">Register</a></p>
                 <style jsx>{`
                     //styles go here
+                    
                 `}</style>
-
             </div>
         )
     }

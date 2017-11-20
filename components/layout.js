@@ -15,11 +15,12 @@ export default ({ children }) => (
         <style jsx global>{`
             
             body {
-                background-color: #e1e1e1;
+                background-color: #fcfcfc;
+                overflow-x: hidden!important;
             } 
             
             .main-body {
-                padding-top: 120px;
+                padding-top: 80px;
             }
 
             input {
